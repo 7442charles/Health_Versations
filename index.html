@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Health Versations - Promoting healthy living through personalized health packages and insightful tips for a better lifestyle.">
+    <meta name="keywords" content="health, healthy living, wellness, personalized health packages, lifestyle, fitness, health tips">
+    <meta name="author" content="Health Versations">
+    <meta name="robots" content="index, follow">
     <title>HEALTH VERSATIONS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6 md:px-12">
+            <!-- Logo -->
+            <div>
+                <a href="#">
+                    <img src="Assets/images/logo.png" alt="Health Versations" class="h-20">
+                </a>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul class="hidden md:flex space-x-6 font-medium">
+                <li><a href="#" class="hover:text-green-600">Home</a></li>
+                <li><a href="#" class="hover:text-green-600">Packaged</a></li>
+                <li><a href="#" class="hover:text-green-600">Healthy Living</a></li>
+                <li><a href="#" class="hover:text-green-600">Talk to Us</a></li>
+                <li><a href="#" class="hover:text-green-600">About Us</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div>
+                <a href="#" class="bg-[#93C754] text-white px-6 py-2 text-sm font-semibold uppercase hover:bg-green-700">Create a package for me</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-gray-800 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <ul class="space-y-4 p-6">
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Home</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Packaged</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Healthy Living</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Talk to Us</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="bg-[#93C754] text-black text-center py-2 text-sm font-medium">
+        <span class="hidden md:inline text-white">This is why you should trust our products</span>
+        <span class="hidden md:inline">&nbsp; &nbsp; Premium Quality | 100% Natural | Tried and Tested | Expertly Created | Nutritional Benefits | Rejuvenate Your Health</span>
+        <marquee class="md:hidden text-white">This is why you should trust our products &nbsp; &nbsp; <span class="text-black"> Premium Quality | 100% Natural | Tried and Tested | Expertly Created | Nutritional Benefits | Rejuvenate Your Health </span></marquee>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
