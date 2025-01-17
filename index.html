@@ -57,6 +57,7 @@
         </div>
     </header>
 
+    <!-- Promomtional Row Section -->
     <div class="bg-[#93C754] text-black text-center py-2 text-sm font-medium">
         <span class="hidden md:inline text-white">This is why you should trust our products</span>
         <span class="hidden md:inline">&nbsp; &nbsp; Premium Quality | 100% Natural | Tried and Tested | Expertly Created | Nutritional Benefits | Rejuvenate Your Health</span>
@@ -64,46 +65,67 @@
     </div>
 
     <!-- Carousel Section -->
-    <section class="relative bg-gray-50 py-10">
-        <div class="container mx-auto px-6 lg:px-8">
-            <h1 class="text-3xl font-bold text-center text-black-600 mb-8">Your wellness is our core concern</h1>
+    <div class="min-h-screen py-10 relative">
+        <!-- Main Heading -->
+        <h1 id="main-heading" class="text-2xl  text-[#0A4040] text-center mb-0 mt-8 transition-opacity duration-500">
+            Your wellness is our core concern
+        </h1>
 
-            <div class="flex items-center justify-between relative">
-                <!-- Left Arrow -->
-                <button class="absolute left-4 z-10 text-green-600 focus:outline-none">
-                    <img src="Assets/images/previous-arrow.svg" alt="Left Arrow" class="w-8 h-8">
-                </button>
-
-                &nbsp;&nbsp;
-
-                <!-- Carousel Content -->
-                <div class="flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden mx-12">
-                    <!-- Image Section -->
-                    <div class="w-full md:w-2/5">
-                        <img src="Assets/images/hero_Image_one.png" alt="Sauerkraut" class="w-full h-80%">
-                    </div>
-
-                    &nbsp;&nbsp;
-
-                    <!-- Text Content -->
-                    <div class="w-full md:w-1/2 p-6 space-y-4">
-                        <h1 class="text-2xl font-bold text-[#0A4040]">Sauerkraut</h1>
-                        <p class="text-black">Get your gut health in check with a well-created <span class="text-black font-semibold">sauerkraut</span> today and bid goodbye to gut problems.</p>
-                        <p class="text-[#93C754]">Premium quality | 100% natural | Tried & Tested</p> 
-                        <br>
-                        <a href="#" class="bg-[#93C754] text-white px-6 py-2 text-sm font-semibold uppercase hover:bg-[#93C750]">I want to order now</a>
+        <!-- Carousel Container -->
+        <div class="relative overflow-hidden max-w-6xl mx-auto">
+            <!-- Slides Container -->
+            <div class="flex transition-transform duration-500 ease-in-out" id="slides-container">
+                <!-- Slide 1 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="flex justify-center items-center py-10">
+                        <div class="flex flex-col md:flex-row items-center overflow-hidden mx-12">
+                            <div class="w-full md:w-2/5">
+                                <img src="Assets/images/hero_Image_one.png" 
+                                    alt="Wimbi Mix" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="w-full md:w-1/2 p-6 space-y-4">
+                                <h2 class="text-2xl font-bold text-[#0A4040]">Sauerkraut</h2>
+                                <p class="text-black">Get your gut health in check with a well-created <span class="text-black font-semibold">Wimbi Mix</span> today and bid goodbye to gut problems.</p>
+                                <p class="text-[#93C754]">Premium quality | 100% natural | Tried & Tested</p>
+                                <br>
+                                <a href="#" class="inline-block bg-[#93C754] text-white px-6 py-2 text-sm font-semibold uppercase hover:bg-opacity-90 transition-colors ">I want to order now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                &nbsp;&nbsp;
-
-                <!-- Right Arrow -->
-                <button class="absolute right-4 z-10 text-green-600 focus:outline-none">
-                    <img src="Assets/images/next-arrow-forward.svg" alt="Next Arrow" class="w-8 h-8">
-                </button>
+                <!-- Slide 2 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="flex justify-center items-center py-10">
+                        <div class="flex flex-col md:flex-row items-center overflow-hidden mx-12">
+                            <div class="w-full md:w-2/5">
+                                <img src="Assets/images/hero_image_two.png" 
+                                    alt="Wimbi Classic" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="w-full md:w-1/2 p-6 space-y-4">
+                                <h2 class="text-2xl font-bold text-[#0A4040]">Wimbi Classic</h2>
+                                <p class="text-black">Experience the authentic taste of our classic <span class="text-black font-semibold">Wimbi Classic</span> blend with traditional ingredients.</p>
+                                <p class="text-[#93C754]">Authentic Recipe | Heritage Blend | Time-Tested</p>
+                                <br>
+                                <a href="#" class="inline-block bg-[#93C754] text-white px-6 py-2 text-sm font-semibold uppercase hover:bg-opacity-90 transition-colors rounded">Order Classic Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Navigation Buttons -->
+            <button class="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 hover:bg-gray-100 focus:outline-none" onclick="moveSlide(-1)">
+                <img src="Assets/images/previous-arrow.svg" alt="right Arrow" class="w-8 h-8">
+            </button>
+            <button class="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 hover:bg-gray-100 focus:outline-none" onclick="moveSlide(1)">
+                <img src="Assets/images/next-arrow-forward.svg" alt="Left Arrow" class="w-8 h-8">
+            </button>
         </div>
-    </section>
+    </div>
+
 
     <!-- premium packages -->
     <section id="premium-packages" class="mx-4 pt-8 text-center">
@@ -168,16 +190,6 @@
     </footer>
 
 
-
-
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <script src="Assets/js/main.js"></script>
 </body>
 </html>
