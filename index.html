@@ -209,6 +209,60 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row gap-8 items-stretch">
+            <div class="flex flex-col w-full md:w-1/2">
+                <!-- Contact Form -->
+                <div class="bg-[#D9D9D9] shadow-lg p-6 flex flex-col justify-between flex-grow">
+                    <h2 class="text-xl font-bold mb-4 text-center text-black">Contact us</h2>
+                    <form action="#" method="POST" class="flex flex-col gap-4">
+                        <input
+                            type="text"
+                            placeholder="please enter your name"
+                            class="border border-gray-300 p-3 w-full focus:outline-none focus:ring-2 focus:ring-teal-500 font-semibold"
+                            required
+                        />
+                        <input
+                            type="email"
+                            placeholder="please enter your email"
+                            class="border border-gray-300 p-3 w-full focus:outline-none focus:ring-2 focus:ring-teal-500 font-semibold"
+                            required
+                        />
+                        <textarea
+                            placeholder="Please describe your message"
+                            rows="4"
+                            class="border border-gray-300 p-3 w-full focus:outline-none focus:ring-2 focus:ring-teal-500 font-semibold"
+                            required
+                        ></textarea>
+                        <button
+                            type="submit"
+                            class="bg-teal-800 text-white py-3 w-full hover:bg-teal-900 font-medium"
+                        >
+                            Submit message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Wrapper to maintain equal height and width -->
+            <div class="flex flex-col w-full md:w-1/2">
+                <!-- Google Maps Area -->
+                <div class="bg-white shadow-lg flex-grow">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.30959006591!2d36.9095031!3d-1.2071505!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLTEuMjA3MTUwNSwgMzYuOTA5NTAzMQ!5e0!3m2!1sen!2sus!4v1615227611123!5m2!1sen!2sus"
+                        width="100%"
+                        height="100%"
+                        allowfullscreen=""
+                        loading="lazy"
+                        class="h-full"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+
     <!-- NewsLetter Section -->
     <section class="flex flex-col md:flex-row items-center gap-4  p-4   mx-8 md:mx-20">
         <span class="text-lg font-bold flex-1 text-center md:text-left">
@@ -224,6 +278,7 @@
         </button>
     </section>
       
+    <!-- Footer Section -->
     <footer class="bg-teal-800 text-white">
         <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start justify-between gap-8 py-8">
           <!-- Logo and Button Section -->
@@ -261,7 +316,7 @@
           </div>
         </div>
 
-        <hr class="color-white m-4 ">
+        <hr class="color-white m-4">
       
         <!-- Copyright Section -->
         <div class="bg-[#0A4040] text-center py-4 text-white">
