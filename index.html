@@ -36,6 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/styles.css">
 </head>
     
 <body class="bg-gray-100 text-gray-800">
@@ -195,6 +196,7 @@
 
     <!-- Main Products Section -->
     <div class="container mx-auto px-4 py-8 my-10">
+        <div class="w-24 h-1 bg-[#0A4040] mx-auto mb-6"></div>
         <h2 class="text-3xl font-bold text-center mb-8 text-[#0A4040]">Healthy Living is our middle name</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Card Template -->
@@ -287,6 +289,132 @@
         <!-- Image Section -->
         <div class="w-full lg:w-1/2 mt-8 lg:mt-0 lg:ml-4">
             <img src="Assets/images/CTA_person.png" alt="Healthy Living Image" class="w-full lg:h-[70%] object-contain mx-auto">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <div class="w-24 h-1 bg-[#0A4040] mx-auto mb-6"></div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#0A4040]">
+                This is what our clients think about us
+            </h2>
+        </div>
+
+        <!-- Testimonials Slider -->
+        <div class="testimonials-container">
+            <div class="testimonials-track animate-scroll">
+                <!-- Original Cards -->
+                <div class="testimonial-card p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold text-[#93C754]">Hellen Muda</h3>
+                                <div class="flex text-emerald-500">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Working with health-conscious is nothing short of amazing. Their attention to detail and commitment to excellence has definitely gone unmatched here.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold text-[#93C754]">Sarah Johnson</h3>
+                                <div class="flex text-emerald-500">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">The level of professionalism and care they provide is exceptional. I couldn't be happier with the results and ongoing support.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold text-[#93C754]">Michael Chen</h3>
+                                <div class="flex text-emerald-500">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Their innovative approach to health and wellness has transformed my lifestyle. The results speak for themselves!</p>
+                    </div>
+                </div>
+
+                <!-- Duplicate Cards for Seamless Loop -->
+                <div class="testimonial-card p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold text-[#93C754]">Hellen Muda</h3>
+                                <div class="flex text-emerald-500">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Working with health-conscious is nothing short of amazing. Their attention to detail and commitment to excellence has definitely gone unmatched here.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold text-[#93C754]">Sarah Johnson</h3>
+                                <div class="flex text-emerald-500">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">The level of professionalism and care they provide is exceptional. I couldn't be happier with the results and ongoing support.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card p-4">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-semibold text-[#93C754]">Michael Chen</h3>
+                                <div class="flex text-emerald-500">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Their innovative approach to health and wellness has transformed my lifestyle. The results speak for themselves!</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
