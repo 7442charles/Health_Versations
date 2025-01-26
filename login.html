@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Health Versations - Promoting healthy living through personalized health packages and insightful tips for a better lifestyle.">
+    <meta name="keywords" content="health, healthy living, wellness, personalized health packages, lifestyle, fitness, health tips">
+    <meta name="author" content="Health Versations">
+    <meta name="robots" content="index, follow">
+    <title>HEALTH VERSATIONS</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="Assets/images/logo.png" type="image/png">
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6 md:px-12">
+            <!-- Logo -->
+            <div>
+                <a href="#">
+                    <img src="Assets/images/logo.png" alt="Health Versations" class="h-20">
+                </a>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul class="hidden md:flex space-x-6 font-medium">
+                <li><a href="#" class="hover:text-green-600">Home</a></li>
+                <li><a href="#" class="hover:text-green-600">Packaged</a></li>
+                <li><a href="#" class="hover:text-green-600">Healthy Living</a></li>
+                <li><a href="#" class="hover:text-green-600">Talk to Us</a></li>
+                <li><a href="#" class="hover:text-green-600">About Us</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div>
+                <a href="#" class="bg-[#93C754] text-white px-6 py-2 text-sm font-semibold uppercase hover:bg-green-700">Create a package for me</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-gray-800 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <ul class="space-y-4 p-6">
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Home</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Packaged</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Healthy Living</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Talk to Us</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Promomtional Row Section -->
+    <div class="bg-[#93C754] text-black text-center py-2 text-sm font-medium">
+        <span class="hidden md:inline text-white">This is why you should trust our products</span>
+        <span class="hidden md:inline">&nbsp; &nbsp; Premium Quality | 100% Natural | Tried and Tested | Expertly Created | Nutritional Benefits | Rejuvenate Your Health</span>
+        <marquee class="md:hidden text-white">This is why you should trust our products &nbsp; &nbsp; <span class="text-black"> Premium Quality | 100% Natural | Tried and Tested | Expertly Created | Nutritional Benefits | Rejuvenate Your Health </span></marquee>
+    </div>
+    
+    <!-- Login Form Section -->
+    <section class="container mx-auto px-4 h-screen flex items-center justify-center">
+        <div class="bg-white overflow-hidden max-w-4xl w-full flex flex-col md:flex-row shadow-lg rounded-lg">
+            <!-- Left Side - Image -->
+            <div class="w-full h-60 sm:h-72 md:h-auto md:w-1/2 relative bg-emerald-600 flex items-center justify-center">
+                <img 
+                    src="Assets/images/login_lady.png"
+                    alt="Health Versations"
+                    class="object-cover h-full w-full md:absolute"
+                />
+            </div>
+
+            <!-- Right Side - Login Form -->
+            <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12 bg-white flex flex-col justify-center">
+                <div class="mb-6 text-center">
+                    <p class="text-black font-semibold mt-2">
+                        Hello, welcome back 
+                        <br>
+                        Enter your details to proceed
+                    </p>
+                </div>
+
+                <form class="space-y-8 relative">
+                    <!-- Email Input -->
+                    <div class="relative">
+                        <input 
+                            type="email" 
+                            id="email"
+                            class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                            placeholder=" " 
+                        />
+                        <label 
+                            for="email"
+                            class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-placeholder-shown:left-4 peer-focus:top-[-8px] peer-focus:left-3 peer-focus:text-sm peer-focus:text-emerald-500 bg-white px-1"
+                        >
+                            Email Address
+                        </label>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="relative">
+                        <input 
+                            type="password" 
+                            id="password"
+                            class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                            placeholder=" "
+                        />
+                        <label 
+                            for="password"
+                            class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-placeholder-shown:left-4 peer-focus:top-[-8px] peer-focus:left-3 peer-focus:text-sm peer-focus:text-emerald-500 bg-white px-1"
+                        >
+                            Password
+                        </label>
+                    </div>
+
+            
+                    <button 
+                        type="submit" 
+                        class="w-full bg-[#0A4040] text-[#93C754] font-bold py-3 px-4 hover:bg-emerald-700 transition-colors duration-300 font-medium rounded-lg"
+                    >
+                        Login Now
+                    </button>
+
+                    <div class="flex items-center justify-between">
+                        <!-- Remember Me -->
+                        <div class="flex items-center">
+                            <input 
+                                type="checkbox" 
+                                id="remember"
+                                class="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300 rounded"
+                            >
+                            <label for="remember" class="ml-2 block text-sm text-gray-700">Remember me</label>
+                        </div>
+                        
+                        <!-- Forgot Password -->
+                        <a href="#" class="text-sm text-red-600 hover:text-red-500">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-teal-800 text-white">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start justify-between gap-8 py-8">
+          <div class="flex flex-col items-start gap-4">
+            <div class="flex items-center gap-2">
+              <img src="Assets/images/white logo.png" alt="Health Versations Logo" class="h-16">
+              <span class="text-2xl font-semibold text-green-300">HEALTH VERSATIONS</span>
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-teal-800 px-6 py-2 font-medium">
+              Create a custom Package for me
+            </button>
+          </div>
+      
+          <div class="flex flex-col gap-2">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">Packages</a>
+            <a href="#" class="hover:underline">Healthy living</a>
+            <a href="#" class="hover:underline">Talk to us</a>
+            <a href="#" class="hover:underline">About us</a>
+            <a href="#" class="hover:underline" id="rateUsButton">Rate Us</a>
+
+          </div>
+      
+          <!-- Contact Information -->
+          <div class="flex flex-col gap-2">
+            <!-- FIXME:ADD ACTUAL DATA HERE -->
+            <p>P.O. BOX: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <p>TELEPHONE NUMBER: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <p>EMAIL: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <div class="flex gap-4 mt-2">
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/facebook.svg" alt="Facebook" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/whatsapp.svg" alt="WhatsApp" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/instagram.svg" alt="Instagram" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/linkedIn.svg" alt="LinkedIn" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/tiktok.svg" alt="TikTok" class="h-6"></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="color-white m-4">
+      
+        <!-- Copyright Section -->
+        <div class="bg-[#0A4040] text-center py-4 text-white">
+          <p>&copy; <span id="current-year"></span> HEALTH VERSATIONS. All rights reserved.</p>
+          <p style="color: #93C754;">Developed and designed by Quick Office Pointe.</p>
+        </div>
+    </footer>
+
+    <!-- FeedBack Modal -->
+    <div id="rateUsModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-lg p-6 relative">
+            <!-- Close Button -->
+            <button 
+                id="closeModal" 
+                class="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+            >
+                &times;
+            </button>
+
+            <!-- Modal Title -->
+            <h2 class="text-2xl font-semibold text-emerald-600 text-center mb-6">
+                Rate Us
+            </h2>
+
+            <!-- Modal Form -->
+            <form class="space-y-4">
+                <!-- Full Name -->
+                <div>
+                    <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">
+                        Full Name
+                    </label>
+                    <input 
+                        type="text" 
+                        id="fullName" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                        placeholder="Enter your full name"
+                        required
+                    />
+                </div>
+
+                <!-- Rating (Stars) -->
+                <div>
+                    <label for="rating" class="block text-sm font-medium text-gray-700 mb-1">
+                        Rating (1-5 Stars)
+                    </label>
+                    <select 
+                        id="rating" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                        required
+                    >
+                        <option value="" disabled selected>Select Rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                        Message
+                    </label>
+                    <textarea 
+                        id="message" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                        rows="4" 
+                        placeholder="Enter your message"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-[#0A4040] text-[#93C754] font-bold py-3 px-4 hover:bg-emerald-700 transition-colors duration-300 font-medium rounded-lg"    >
+                    Rate Us
+                </button>
+            </form>
+        </div>
+    </div>
+
+<script src="Assets/js/modal.js"></script>
+
+</body>
+</html>

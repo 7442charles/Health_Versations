@@ -66,3 +66,5 @@ menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
 document.getElementById('current-year').textContent = new Date().getFullYear();
+
+
