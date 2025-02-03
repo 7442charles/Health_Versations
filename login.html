@@ -42,8 +42,8 @@
                 <li><a href="#" class="hover:text-green-600">About Us</a></li>
             </ul>
 
-            <!-- CTA Button -->
-            <div>
+            <!-- CTA Button (Desktop) -->
+            <div class="hidden md:block">
                 <a href="#" class="bg-[#93C754] text-white px-6 py-2 text-sm font-semibold uppercase hover:bg-green-700">Create a package for me</a>
             </div>
 
@@ -64,6 +64,10 @@
                 <li><a href="#" class="block text-gray-800 hover:text-green-600">Talk to Us</a></li>
                 <li><a href="#" class="block text-gray-800 hover:text-green-600">About Us</a></li>
             </ul>
+            <!-- CTA Button (Mobile) -->
+            <div class="p-6">
+                <a href="#" class="block text-center bg-[#93C754] text-white px-6 py-3 text-sm font-semibold uppercase hover:bg-green-700 rounded-md">Create a package for me</a>
+            </div>
         </div>
     </header>
 
@@ -276,7 +280,8 @@
         </div>
     </div>
 
-<script src="Assets/js/modal.js"></script>
+<script src="Assets/js/modal.js" defer></script>
+<script src="Assets/js/mobile_toggle.js" defer></script>
 
 </body>
 </html>
