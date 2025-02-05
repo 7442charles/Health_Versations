@@ -51,3 +51,7 @@
 .testimonials-track:hover {
     animation-play-state: paused;
 }
+
+.active {
+    color: #93C754;
+}

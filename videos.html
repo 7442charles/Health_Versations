@@ -20,6 +20,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="Assets/css/styles.css">
     </head>
 <body class="font-['Inter']">
     <!-- Header Section -->
@@ -38,6 +40,7 @@
                 <li><a href="#" class="hover:text-green-600">Packaged</a></li>
                 <li><a href="#" class="hover:text-green-600">Healthy Living</a></li>
                 <li><a href="#" class="hover:text-green-600">Talk to Us</a></li>
+                <li><a href="#" class="hover:text-green-600 active">Videos</a></li>
                 <li><a href="#" class="hover:text-green-600">About Us</a></li>
             </ul>
 
@@ -61,6 +64,7 @@
                 <li><a href="#" class="block text-gray-800 hover:text-green-600">Packaged</a></li>
                 <li><a href="#" class="block text-gray-800 hover:text-green-600">Healthy Living</a></li>
                 <li><a href="#" class="block text-gray-800 hover:text-green-600">Talk to Us</a></li>
+                <li><a href="#" class="hover:text-green-600 active">Videos</a></li>
                 <li><a href="#" class="block text-gray-800 hover:text-green-600">About Us</a></li>
             </ul>
             <!-- CTA Button (Mobile) -->
@@ -87,21 +91,24 @@
                 we have created videos for you to get started at home on our <span class="text-[#FF0000]"><a href="https://www.youtube.com/@healthversations/" target="_blank">youtube channel</a></span>
             </p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="Assets/images/notworking.jpg" alt="Video thumbnail" class="w-full">
-                    <p class="p-4 text-center text-gray-400">
-                        WHY INTERMITTENT FASTING IS NOT WORKING FOR YOU
-                    </p>
-                    <div class="p-4">
-                        <div class="flex justify-between mb-4">
-                            <button class="bg-[#93C754] text-[#0A4040] px-4 py-2 rounded text-sm">Watch the video now</button>
-                            <button class="border border-green-500 text-[#0A4040] px-4 py-2 rounded text-sm">Share the video now</button>
+            <a href="https://www.youtube.com/watch?v=8JR7vAUaA70" target="_blank" class="block">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="Assets/images/notworking.jpg" alt="Video thumbnail" class="w-full">
+                        <p class="p-4 text-center text-gray-400">
+                            WHY INTERMITTENT FASTING IS NOT WORKING FOR YOU
+                        </p>
+                        <div class="p-4">
+                            <div class="flex justify-between mb-4">
+                                <button class="bg-[#93C754] text-[#0A4040] px-4 py-2 rounded text-sm">Watch the video now</button>
+                                <button class="border border-green-500 text-[#0A4040] px-4 py-2 rounded text-sm">Share the video now</button>
+                            </div>
+                            <button class="bg-red-600 text-white px-4 py-2 text-sm subscribe">Subscribe</button>
                         </div>
-                        <button class="bg-red-600 text-white px-4 py-2  text-sm">Subscribe</button>
                     </div>
-                </div>
+            </a>
 
+            <a href="https://www.youtube.com/watch?v=8JR7vAUaA70" target="_blank" class="block">   
                 <div class="bg-white rounded-lg shadow-md overflow-hidden" id="video_id">
                     <img src="Assets/images/weightLoss.jpg" alt="Video thumbnail" class="w-full">
                     <p class="p-4 text-center text-gray-400" id="video_title">
@@ -112,10 +119,12 @@
                             <button class="bg-green-500 text-white px-4 py-2 rounded text-sm">Watch the video now</button>
                             <button class="border border-green-500 text-green-500 px-4 py-2 rounded text-sm">Share the video now</button>
                         </div>
-                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm">Subscribe</button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm subscribe">Subscribe</button>
                     </div>
                 </div>
+            </a>
 
+            <a href="https://www.youtube.com/watch?v=8JR7vAUaA70" target="_blank" class="block">
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
                     <img src="Assets/images/ulcers.jpg" alt="Video thumbnail" class="w-full">
                     <p class="p-4 text-center text-gray-400">
@@ -126,10 +135,12 @@
                             <button class="bg-green-500 text-white px-4 py-2 rounded text-sm">Watch the video now</button>
                             <button class="border border-green-500 text-green-500 px-4 py-2 rounded text-sm">Share the video now</button>
                         </div>
-                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm">Subscribe</button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm subscribe">Subscribe</button>
                     </div>
                 </div>
+            </a>
 
+            <a href="https://www.youtube.com/watch?v=8JR7vAUaA70" target="_blank" class="block">
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
                     <img src="Assets/images/no_sugar.jpg" alt="Video thumbnail" class="w-full">
                     <p class="p-4 text-center text-gray-400">
@@ -140,10 +151,12 @@
                             <button class="bg-green-500 text-white px-4 py-2 rounded text-sm">Watch the video now</button>
                             <button class="border border-green-500 text-green-500 px-4 py-2 rounded text-sm">Share the video now</button>
                         </div>
-                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm">Subscribe</button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm subscribe">Subscribe</button>
                     </div>
                 </div>
+            </a>
 
+            <a href="https://www.youtube.com/watch?v=8JR7vAUaA70" target="_blank" class="block">
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
                     <img src="Assets/images/redcabbage.jpg" alt="Video thumbnail" class="w-full">
                     <p class="p-4 text-center text-gray-400">
@@ -154,10 +167,12 @@
                             <button class="bg-green-500 text-white px-4 py-2 rounded text-sm">Watch the video now</button>
                             <button class="border border-green-500 text-green-500 px-4 py-2 rounded text-sm">Share the video now</button>
                         </div>
-                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm">Subscribe</button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm subscribe">Subscribe</button>
                     </div>
                 </div>
+            </a>
 
+            <a href="https://www.youtube.com/watch?v=8JR7vAUaA70" target="_blank" class="block">
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
                     <img src="Assets/images/fast.jpg" alt="Video thumbnail" class="w-full">
                     <p class="p-4 text-center text-gray-400">
@@ -168,13 +183,11 @@
                             <button class="bg-green-500 text-white px-4 py-2 rounded text-sm">Watch the video now</button>
                             <button class="border border-green-500 text-green-500 px-4 py-2 rounded text-sm">Share the video now</button>
                         </div>
-                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm">Subscribe</button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded text-sm subscribe">Subscribe</button>
                     </div>
                 </div>
+            </a>
 
-
-                <!-- Repeat video card 5 more times -->
-            </div>
         </div>
     </section>
 
@@ -239,6 +252,7 @@
             <a href="#" class="hover:underline">Healthy living</a>
             <a href="#" class="hover:underline">Talk to us</a>
             <a href="#" class="hover:underline">About us</a>
+            <a href="#" class="hover:underline active">Videos</a>
             <a href="#" class="hover:underline" id="rateUsButton">Rate Us</a>
           </div>
       
@@ -247,7 +261,7 @@
             <!-- FIXME:ADD ACTUAL DATA HERE -->
             <p>P.O. BOX: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
             <p>TELEPHONE NUMBER: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
-            <p>EMAIL: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <p>EMAIL: <span class="text-sm font-semibold text-[#93C754]">INQUIRIES@HEALTHVERSATIONS.CO.KE</span></p>
             <div class="flex gap-4 mt-2">
               <a href="#" class="hover:opacity-80"><img src="Assets/images/facebook.svg" alt="Facebook" class="h-6"></a>
               <a href="#" class="hover:opacity-80"><img src="Assets/images/whatsapp.svg" alt="WhatsApp" class="h-6"></a>
@@ -267,7 +281,19 @@
         </div>
     </footer>
 
+    <script>
+        function subscribeYoutube() {
+            window.open('https://www.youtube.com/@healthversations?sub_confirmation=1', '_blank')
+        }
+        const subscribeButtons = document.getElementsByClassName('subscribe');
+
+        for (let i = 0; i < subscribeButtons.length; i++) {
+            subscribeButtons[i].addEventListener('click', subscribeYoutube);
+        }
+
+    </script>
     <script src="Assets/js/mobile_toggle.js"></script>
+    <script src="Assets/js/modal.js"></script>
 
 </body>
 </html>

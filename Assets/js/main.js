@@ -59,6 +59,3 @@ slidesContainer.addEventListener('touchend', e => {
     }
 });
 
-
-
-
