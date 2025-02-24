@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Health Versations - Promoting healthy living through personalized health packages and insightful tips for a better lifestyle.">
+        <meta name="keywords" content="health, healthy living, wellness, personalized health packages, lifestyle, fitness, health tips">
+        <meta name="author" content="Health Versations">
+        <meta name="robots" content="index, follow">
+        <title>HEALTH VERSATIONS</title>
+    
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Health Versations - Your Wellness Partner">
+        <meta property="og:description" content="Promoting healthy living through personalized health packages and insightful tips for a better lifestyle.">
+        <meta property="og:image" content="Assets/images/logo.png">
+        <meta property="og:url" content="https://www.healthversations.com">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Health Versations">
+    
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Health Versations - Your Wellness Partner">
+        <meta name="twitter:description" content="Promoting healthy living through personalized health packages and insightful tips for a better lifestyle.">
+        <meta name="twitter:image" content="Assets/images/logo.png">
+        <meta name="twitter:site" content="@HealthVersations">
+        <meta name="twitter:creator" content="@HealthVersations">
+    
+        <!-- Favicon -->
+        <link rel="icon" href="Assets/images/logo.webp" type="image/png">
+        <link rel="shortcut icon" href="Assets/images/logo.webp" type="image/png">
+    
+        <!-- Stylesheets -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Assets/css/styles.css">
+    </head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6 md:px-12">
+            <!-- Logo -->
+            <div>
+                <a href="#">
+                    <img src="Assets/images/logo.webp" alt="Health Versations" class="h-20">
+                </a>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul class="hidden md:flex space-x-6 font-medium">
+                <li><a href="index.html" class="hover:text-green-600 ">Home</a></li>
+                <li><a href="#" class="hover:text-green-600">Packaged</a></li>
+                <li><a href="#" class="hover:text-green-600">Healthy Living</a></li>
+                <li><a href="#" class="hover:text-green-600">Talk to Us</a></li>
+                <li><a href="videos.html" class="hover:text-green-600 ">Videos</a></li>
+                <li><a href="#" class="hover:text-green-600">About Us</a></li>
+                <li><a href="blog.html" class="hover:text-green-600 active">Blog</a></li>
+            </ul>
+
+            <!-- CTA Button (Desktop) -->
+            <div class="hidden md:block">
+                <a href="#" class="bg-[#93C754] text-white px-6 py-2 text-sm font-semibold uppercase hover:bg-green-700">Create a package for me</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-gray-800 focus:outline-none" aria-label="Open Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <ul class="space-y-4 p-6"> 
+                <li><a href="index.html" class="block text-gray-800 hover:text-green-600">Home</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Packaged</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Healthy Living</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">Talk to Us</a></li>
+                <li><a href="videos.html" class="block text-gray-800 hover:text-green-600 ">Videos</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">About Us</a></li>
+                <li><a href="blog.html" class="block text-gray-800 hover:text-green-600 active">Blog</a></li>
+            </ul>
+            <!-- CTA Button (Mobile) -->
+            <div class="p-6">
+                <a href="#" class="block text-center bg-[#93C754] text-white px-6 py-3 text-sm font-semibold uppercase hover:bg-green-700 rounded-md">Create a package for me</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Promomtional Row Section -->
+    <div class="bg-[#93C754] text-black text-center py-2 text-sm font-medium">
+        <span class="hidden md:inline text-white">This is why you should trust our products</span>
+        <span class="hidden md:inline">&nbsp; &nbsp; Premium Quality | 100% Natural | Tried and Tested | Expertly Created | Nutritional Benefits | Rejuvenate Your Health</span>
+        <marquee class="md:hidden text-white">This is why you should trust our products &nbsp; &nbsp; <span class="text-black"> Premium Quality | 100% Natural | Tried and Tested | Expertly Created | Nutritional Benefits | Rejuvenate Your Health </span></marquee>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Section Heading -->
+        <h2 class="text-3xl font-medium text-center text-black mb-8">Our articles are inspired by Health experts</h2>
+    
+        <div class="grid md:grid-cols-2 gap-8 bg-white shadow-lg rounded-lg p-6">
+            <!-- Left Side: Blog Image and Caption -->
+            <div>
+                <a href="blog-post-1.html">
+                    <img src="Assets/images/blog.png" alt="Healthy Living Blog" class="w-full h-64 object-cover rounded-lg">
+                </a>
+                <p class="mt-2 text-gray-600 text-sm">
+                    Learn the best practices for a healthy lifestyle, nutrition tips, and expert advice on well-being.
+                </p>
+                <a href="blog-post-1.html" class="text-[#0A4040] font-semibold text-sm mt-1 inline-block">Read More →</a>
+            </div>
+    
+            <!-- Right Side: Blog List -->
+            <div class="flex flex-col justify-center space-y-4">
+                <h3 class="text-2xl font-bold text-gray-800">Latest Blog Posts</h3>
+    
+                <!-- Blog Post 1 -->
+                <div>
+                    <a href="blog-post-2.html">
+                        <h4 class="text-xl font-semibold text-[#0A4040] hover:underline">10 Ways to Boost Your Immune System</h4>
+                    </a>
+                    <p class="text-gray-600 text-sm">
+                        Discover natural ways to strengthen your immunity and stay healthy year-round.
+                    </p>
+                </div>
+    
+                <!-- Blog Post 2 -->
+                <div>
+                    <a href="blog-post-3.html">
+                        <h4 class="text-xl font-semibold text-[#0A4040] hover:underline">The Importance of Daily Hydration</h4>
+                    </a>
+                    <p class="text-gray-600 text-sm">
+                        Staying hydrated is essential for overall health. Here’s how to do it right.
+                    </p>
+                </div>
+    
+                <!-- Blog Post 3 -->
+                <div>
+                    <a href="blog-post-4.html">
+                        <h4 class="text-xl font-semibold text-[#0A4040] hover:underline">Superfoods You Should Eat Daily</h4>
+                    </a>
+                    <p class="text-gray-600 text-sm">
+                        A guide to nutrient-rich foods that promote long-term health.
+                    </p>
+                </div>
+    
+                <!-- Blog Post 4 -->
+                <div>
+                    <a href="blog-post-5.html">
+                        <h4 class="text-xl font-semibold text-[#0A4040] hover:underline">How to Improve Your Sleep Quality</h4>
+                    </a>
+                    <p class="text-gray-600 text-sm">
+                        Struggling with sleep? These expert tips will help you get better rest.
+                    </p>
+                </div>
+    
+                <!-- Blog Post 5 -->
+                <div>
+                    <a href="blog-post-6.html">
+                        <h4 class="text-xl font-semibold text-[#0A4040] hover:underline">Managing Stress for a Healthier Life</h4>
+                    </a>
+                    <p class="text-gray-600 text-sm">
+                        Learn effective stress management techniques to improve your mental well-being.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section id="cta" class="flex flex-col lg:flex-row items-center justify-between px-8 py-4 lg:px-12 lg:py-2 bg-[#0A4040] m-2 lg:m-4">
+        <!-- Text Section -->
+        <div class="w-full lg:w-1/2 text-left mb-4 lg:mb-0 lg:mr-4">
+            <h1 class="text-4xl lg:text-5xl font-bold text-[#93C754] mb-4">Healthy Living</h1>
+            <p class="text-xl mb-4 text-white">Get your gut health in check with a well-created <span class="font-bold">sauerkraut</span> today and bid goodbye to gut problems.</p>
+            <button class="bg-green-500 text-[#0A4040] font-bold py-3 px-6 mb-4 hover:bg-green-600 text-lg">Get me started on healthy living</button>
+            <p class="text-base text-[#93C754]">premium quality | 100% natural | Tried & Tested</p>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="w-full lg:w-1/2 mt-8 lg:mt-0 lg:ml-4">
+            <img src="Assets/images/CTA_person.webp" alt="Healthy Living Image" class="w-full lg:h-[70%] object-contain mx-auto">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-teal-800 text-white">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start justify-between gap-8 py-8">
+          <div class="flex flex-col items-start gap-4">
+            <div class="flex items-center gap-2">
+              <img src="Assets/images/white logo.webp" alt="Health Versations Logo" class="h-16">
+              <span class="text-2xl font-semibold text-green-300">HEALTH VERSATIONS</span>
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-teal-800 px-6 py-2 font-medium">
+              Create a custom Package for me
+            </button>
+          </div>
+      
+          <div class="flex flex-col gap-2">
+            <a href="#" class="hover:underline active">Home</a>
+            <a href="#" class="hover:underline">Packages</a>
+            <a href="#" class="hover:underline">Healthy living</a>
+            <a href="#" class="hover:underline">Talk to us</a>
+            <a href="videos.html" class="hover:underline">Videos</a>
+            <a href="#" class="hover:underline">About us</a>
+            <a href="#" class="hover:underline" id="rateUsButton">Rate Us</a>
+          </div>
+      
+          <!-- Contact Information -->
+          <div class="flex flex-col gap-2">
+            <!-- FIXME:ADD ACTUAL DATA HERE -->
+            <p>P.O. BOX: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <p>TELEPHONE NUMBER: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <p>EMAIL: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <div class="flex gap-4 mt-2">
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/facebook.svg" alt="Facebook" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/whatsapp.svg" alt="WhatsApp" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/instagram.svg" alt="Instagram" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/linkedIn.svg" alt="LinkedIn" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/tiktok.svg" alt="TikTok" class="h-6"></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="color-white m-4">
+      
+        <!-- Copyright Section -->
+        <div class="bg-[#0A4040] text-center py-4 text-white">
+          <p>&copy; <span id="current-year"></span> HEALTH VERSATIONS. All rights reserved.</p>
+          <p style="color: #93C754;">Developed and designed by Quick Office Pointe.</p>
+        </div>
+    </footer>
+    <script src="Assets/js/mobile_toggle.js"></script>
+</body>
+</html>
