@@ -68,6 +68,6 @@ document.querySelectorAll('.decrease').forEach(button => {
             
 
             console.log(cart); 
-            alert(`${productName} added to cart!`);
+            // alert(`${productName} added to cart!`);
         });
     });
