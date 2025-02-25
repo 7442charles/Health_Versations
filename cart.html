@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6 md:px-12">
+            <!-- Logo -->
+            <div>
+                <a href="#">
+                    <img src="Assets/images/logo.webp" alt="Health Versations" class="h-20">
+                </a>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul class="hidden md:flex space-x-6 font-medium">
+                <li><a href="index.html" class="hover:text-green-600 active">Home</a></li>
+                <li><a href="#premium-packages" class="hover:text-green-600">Packaged</a></li>
+                <li><a href="#healthy-living" class="hover:text-green-600">Healthy Living</a></li>
+                <li><a href="#contact" class="hover:text-green-600">Talk to Us</a></li>
+                <li><a href="videos.html" class="hover:text-green-600 ">Videos</a></li>
+                <li><a href="#" class="hover:text-green-600">About Us</a></li>
+                <li><a href="blog.html" class="hover:text-green-600">Blog</a></li>
+            </ul>
+
+            <!-- CTA Button (Desktop) -->
+            <div class="hidden md:block">
+                <a href="#" class="bg-[#93C754] text-white px-6 py-2 text-sm font-semibold uppercase hover:bg-green-700">Create a package for me</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-gray-800 focus:outline-none" aria-label="Open Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <ul class="space-y-4 p-6"> 
+                <li><a href="index.html" class="block text-gray-800 hover:text-green-600 active">Home</a></li>
+                <li><a href="#premium-packages" class="block text-gray-800 hover:text-green-600">Packaged</a></li>
+                <li><a href="#healthy-living" class="block text-gray-800 hover:text-green-600">Healthy Living</a></li>
+                <li><a href="#contact" class="block text-gray-800 hover:text-green-600">Talk to Us</a></li>
+                <li><a href="videos.html" class="block text-gray-800 hover:text-green-600 ">Videos</a></li>
+                <li><a href="#" class="block text-gray-800 hover:text-green-600">About Us</a></li>
+                <li><a href="blog.html" class="block text-gray-800 hover:text-green-600 active">Blog</a></li>
+            </ul>
+            <!-- CTA Button (Mobile) -->
+            <div class="p-6">
+                <a href="#" class="block text-center bg-[#93C754] text-white px-6 py-3 text-sm font-semibold uppercase hover:bg-green-700 rounded-md">Create a package for me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Promomtional Row Section -->
+    <div class="bg-[#93C754] text-black text-center py-2 text-sm font-medium">
+        <span class="hidden md:inline text-white">This is why you should trust our products</span>
+        <span class="hidden md:inline">&nbsp; &nbsp; Premium Quality | 100% Natural | Tried and Tested | Expertly Created | Nutritional Benefits | Rejuvenate Your Health</span>
+        <marquee class="md:hidden text-white">This is why you should trust our products &nbsp; &nbsp; <span class="text-black"> Premium Quality | 100% Natural | Tried and Tested | Expertly Created | Nutritional Benefits | Rejuvenate Your Health </span></marquee>
+    </div>
+
+
+    <div class="max-w-4xl mx-auto bg-white shadow-lg p-6 rounded-lg">
+        <h2 class="text-2xl font-bold text-[#0A4040] mb-4">Shopping Cart</h2>
+
+        <div id="cart-items">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+
+        <!-- Total Price Section -->
+        <div class="mt-6 pt-4 flex justify-between items-center text-xl font-semibold">
+            <h3>Total:</h3>
+            <span class="text-[#52823C]" id="cart-total">Ksh 0</span>
+        </div>
+
+        <!-- Proceed to Checkout Button -->
+        <button id="checkout-btn" class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-2 font-bold">
+            Proceed to Checkout
+        </button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-teal-800 text-white">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start justify-between gap-8 py-8">
+          <div class="flex flex-col items-start gap-4">
+            <div class="flex items-center gap-2">
+              <img src="Assets/images/white logo.webp" alt="Health Versations Logo" class="h-16">
+              <span class="text-2xl font-semibold text-green-300">HEALTH VERSATIONS</span>
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-teal-800 px-6 py-2 font-medium">
+              Create a custom Package for me
+            </button>
+          </div>
+      
+          <div class="flex flex-col gap-2">
+            <a href="index.html" class="hover:underline active">Home</a>
+            <a href="#premium-packages" class="hover:underline">Packages</a>
+            <a href="#healthy-living" class="hover:underline">Healthy living</a>
+            <a href="#contact" class="hover:underline">Talk to us</a>
+            <a href="videos.html" class="hover:underline">Videos</a>
+            <a href="#" class="hover:underline">About us</a>
+            <!-- <a href="#" class="hover:underline" id="rateUsButton">Rate Us</a> -->
+          </div>
+      
+          <!-- Contact Information -->
+          <div class="flex flex-col gap-2">
+            <!-- FIXME:ADD ACTUAL DATA HERE -->
+            <p>P.O. BOX: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <p>TELEPHONE NUMBER: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <p>EMAIL: <span class="text-sm font-semibold text-[#93C754]">@Izooh add actual data here</span></p>
+            <div class="flex gap-4 mt-2">
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/facebook.svg" alt="Facebook" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/whatsapp.svg" alt="WhatsApp" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/instagram.svg" alt="Instagram" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/linkedIn.svg" alt="LinkedIn" class="h-6"></a>
+              <a href="#" class="hover:opacity-80"><img src="Assets/images/tiktok.svg" alt="TikTok" class="h-6"></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="color-white m-4">
+      
+        <!-- Copyright Section -->
+        <div class="bg-[#0A4040] text-center py-4 text-white">
+          <p>&copy; <span id="current-year"></span> HEALTH VERSATIONS. All rights reserved.</p>
+          <p style="color: #93C754;">Developed and designed by Quick Office Pointe.</p>
+        </div>
+    </footer>
+
+    <script src="Assets/js/cart_page.js"></script>
+</body>
+</html>
